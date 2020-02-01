@@ -1,0 +1,35 @@
+.junbotron {
+    display: block;
+    padding: 30px;
+    background-color: deepskyblue;
+}
+
+.title {
+    display: block;
+    padding: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+
+.description {
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.selectednews {
+    display: block;
+    border-style: dashed;
+    margin: 3px;
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+    color: red;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: inline-flex;
+    padding: 30px;
+    background-color: deepskyblue;
+    }

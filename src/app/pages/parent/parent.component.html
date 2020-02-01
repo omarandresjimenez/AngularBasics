@@ -1,0 +1,20 @@
+<div class='junbotron' >
+   <span class="title">NEWS</span>
+   <span class="description">Latest news for all around the world!</span>
+
+</div>
+<div class="selectednews"  *ngIf="selectedNews">
+  {{ service.customMessage$ | async }} - {{selectedNews}}
+</div>
+<hr>
+<div class="container">
+<app-children [count]="countNews" (newItemSelected)="itemClicked($event)">
+
+  </app-children>
+</div>
+  <hr>
+  <select #countselector (change)="changeCount($event)">
+     <option value="1" [selected]="countNews === 1">1</option>
+     <option value="2" [selected]="countNews === 2">2</option>
+     <option value="3" [selected]="countNews === 3">3</option>
+  </select>

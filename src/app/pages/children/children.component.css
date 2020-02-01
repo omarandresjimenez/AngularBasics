@@ -1,0 +1,17 @@
+.news {
+    float: left;
+    margin: 5px;
+    border: 1px solid gray;
+    width: 400px;
+}
+
+.news img {
+    height: auto;
+    width: 400px;
+}
+
+.description {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 5px;
+}
