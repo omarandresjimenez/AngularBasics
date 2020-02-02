@@ -32,6 +32,7 @@ export class MainserviceService {
 
   public init() {
     this._customMessage$  = this.customMessage$.asObservable();
+    this._news$ = this.news$.asObservable();
   }
 
   public initInformation() {
