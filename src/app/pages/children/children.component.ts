@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angular/core';
 import { News } from '../models/news';
+import { MainserviceService } from '../services/mainservice.service';
 
 @Component({
   selector: 'app-children',
@@ -15,17 +16,18 @@ export class ChildrenComponent implements OnInit, OnChanges {
   originalNews: News[] = [];
   news: News[] = [];
 
-  constructor() { }
+  constructor(private mainservice: MainserviceService) { }
 
   ngOnInit() {
-    this .originalNews.push({ id: 1, image: '1.jpg', description: 'Great place to live'});
-    this .originalNews.push({ id: 2, image: '2.jpg', description: 'Nice place to visit'});
-    this .originalNews.push({ id: 3, image: '3.jpg', description: 'Best place to go in vacations'});
-    this .news = this.originalNews.slice(0, this.count);
+    this.mainservice._news$.subscribe( (info: News[]) => {
+      this .news = this.originalNews.slice(0, this.count);
+    });
   }
 
   ngOnChanges() {
-    this .news = this.originalNews.slice(0, this.count);
+    if (this.news.length) {
+      this .news = this.originalNews.slice(0, this.count);
+    }
   }
 
   onClickNews(id:  number) {
