@@ -1,0 +1,14 @@
+<p><b>You must to be logged  to see SubMenu 1 section</b></p>
+<form #uform="ngForm" (ngSubmit)="login(uform, email, pwd)">
+    user: <input  #email type="text" placeholder="Any user" required  minlength="3"><br>
+    <div *ngIf="uform.submitted && !email.validity.valid" style="color: red">
+            <div >User is required</div>
+        </div>
+    pwd:   <input  #pwd type="password"  placeholder="Any pwd" required minlength="3"><br>
+    <div *ngIf="uform.submitted && !pwd.validity.valid" style="color: red">
+            <div >password is required</div>
+        </div>
+    <br>
+    <br>
+    <input type="submit">
+</form>

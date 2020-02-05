@@ -3,6 +3,7 @@
     margin: 5px;
     border: 1px solid gray;
     width: 400px;
+    cursor: pointer;
 }
 
 .news img {

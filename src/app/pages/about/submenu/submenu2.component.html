@@ -1,0 +1,15 @@
+<p><b>My Grocery List</b></p>     (angular animations when removal elements)
+<table width='200px' border="1">
+    <tr>
+        <th>Item</th>
+        <th></th>
+    </tr>
+    <tr *ngFor="let row of arrGrocery; let i = index" [@flyInOut]="'in'">
+        <td>{{ row }}</td>
+        <td><span class="remove" (click)="removeItem(i)">X</span></td>
+    </tr>
+
+</table>
+<br>
+<br>
+<span id="delay" class="restart" (click)="restart()">Restart</span>      (css transition  Text Hover 2 secs)

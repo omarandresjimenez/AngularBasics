@@ -1,0 +1,25 @@
+.remove {
+    font-size: larger;
+    color: red;
+    cursor: pointer;
+    align-items: center;
+}
+
+.restart {
+    font-size: larger;
+    color: blue;
+    cursor: pointer;
+}
+
+
+
+#delay {
+    font-size: 14px;
+    transition-property: font-size;
+    transition-duration: 4s;
+    transition-delay: 1s;
+  }
+  
+ #delay:hover {
+    font-size: 36px;
+  }

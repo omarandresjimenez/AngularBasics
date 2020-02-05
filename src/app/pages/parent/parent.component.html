@@ -1,10 +1,12 @@
 <div class='junbotron' >
-   <span class="title">NEWS</span>
-   <span class="description">Latest news for all around the world!</span>
-
+   <ng-content></ng-content>
+   <p>
+    <b>{{ service._customMessage$ | async }}</b>
+   </p>
+(content projection)
 </div>
 <div class="selectednews"  *ngIf="selectedNews">
-  {{ service._customMessage$ | async }} - {{selectedNews}}
+  {{selectedNews}}
 </div>
 <hr>
 <div class="container">
@@ -13,8 +15,6 @@
   </app-children>
 </div>
   <hr>
-  <select #countselector (change)="changeCount($event)">
-     <option value="1" [selected]="countNews === 1">1</option>
-     <option value="2" [selected]="countNews === 2">2</option>
-     <option value="3" [selected]="countNews === 3">3</option>
+  <select #countselector (change)="changeCount($event)" [ngModel]="countNews">
+     <option *ngFor="let count of [1,2,3]"  [value]="count" [selected]="countNews === count">{{ count }}</option>
   </select>

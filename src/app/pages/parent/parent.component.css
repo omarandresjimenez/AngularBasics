@@ -1,21 +1,10 @@
 .junbotron {
     display: block;
-    padding: 30px;
+    padding: 20px;
     background-color: deepskyblue;
 }
 
-.title {
-    display: block;
-    padding: 30px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
-}
 
-.description {
-    display: block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 .selectednews {
     display: block;

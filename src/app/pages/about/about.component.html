@@ -3,29 +3,56 @@
   <h2>About Page</h2>
 </header>
 <footer>
-  <p class='info'>THis is my first message</p>
+  <p class='info'>Here is a nested Router-outlet</p>
 </footer>
 <content class='content'>
-  <p>loreem ipsum loreem ipsumloreem ipsumloreem ipsumloreem ipsum loreem ipsumloreem ipsumvloreem ipsum
-    loreem ipsumloreem ipsumvloreem ipsum
-    loreem ipsumloreem ipsumloreem ipsumloreem ipsum loreem ipsumloreem ipsum
+  <p>About page  contains two links  that are shown as children from this page.
+     About Module use lazy loading feature and Submenu 1 route has a guard that avoids activate it if the user is not logged in the site.
+      Submenu 2 will show some basic animation features.
+
+
+
   </p>
-  <p>loreem ipsumloreem ipsum loreem ipsumloreem ipsumvloreem ipsumloreem ipsum loreem ipsumloreem ipsum
-    loreem ipsumloreem ipsum loreem ipsum
+  <p>
+    Contact Menu contains the sample of a custom Directive that format a number 
   </p>
+  
+      <nav>
+          <ul style="display: block">
+             <li><a  [routerLink]="['/about/submenu1']"  routerLinkActive="active">SubMenu 1</a></li>
+             <li><a  [routerLink]="['/about/submenu2']"  routerLinkActive="active">SubMenu 2</a></li>
+          </ul>
+        </nav>
+        <div class="submenu">
+            <router-outlet></router-outlet>  
+        </div>
+  
 </content>
 </div>
 <aside class='aside'>
-   <p class='atitle'>My Title</p>
+   <p class='atitle'>Notes</p>
    <p  class ='acontent'>
-     Thisn is the content fropk aside,  bar side .. etc.. Thisn is the content fropk aside,  bar side .. etc..
-     Thisn is the content fropk aside,  bar side .. etc..
-     Thisn is the content fropk aside,  bar side .. etc..
-     Thisn is the content fropk aside,  bar side .. etc..
+    This structure was created to show different HTML 5 tags aside, footer, header, content and use CSS mediaqueries to create a responsive design.
    </p>
+   
+      <p>
+          VEry simple and basic "ugly" design ..   porpuse if this design is identify the different sections and how apply the transitions every time that angular apply changes to the UI.
+        
+        
+          Next stage is apply Bootstrap 4 to change the UI..  this step is to show the "logic" and Angular features in a simple way
+        
+        </p>
+        
+        <p>
+         Note:  Here I am not applying the Solid Principles nor Good Angular Architecture Best Practices..  Real projects deserve the time!
+        
+        </p>
+   
+   <br>
+
 </aside>
 <footer>
   <div class='footer'>
-      CopyRight 2019  All ruights reserved
+      CopyRight 2020  All ruights reserved
   </div>
 </footer>
