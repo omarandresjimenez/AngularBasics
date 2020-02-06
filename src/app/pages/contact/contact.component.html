@@ -1,6 +1,20 @@
 <br><br>
-    Automatic format number with directive after blur!
-    <input type="text"  appFormatnumber>
+Use of Directives, property Binding, Interpolation, event binding
+<br><br>
+    Automatic format number with directive <br>
+    <br>
+    Not sure how it could work while user types to reformat same entry without disturb user typing.. 
+    <br>
+    Here is as  how I would doit:
+    <br>
+    <input type="number"  [(ngModel)]="price" (blur)="doSomething()" >
+    <br>
+    <input type="text"  [appAutoformatnumber]="price" readonly>
+    <br>
+    Interpolation: {{ price }}
+
+
+
 
 
  

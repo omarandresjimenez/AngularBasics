@@ -18,12 +18,6 @@ export class ParentComponent implements OnInit, OnDestroy {
   ngOnInit() {
     // this.sub = this.service.customMessage$.subscribe(msg => this.selectedNews = msg);
     this.sub = this.service.getAnotherMessage(' From Parent Component').subscribe(msg => this.selectedNews = msg);
-    const colorsMap = {
-      0 : 'green',
-      1 : 'red',
-      2 : 'black',
-    };
-
   }
 
   itemClicked($event) {

@@ -26,6 +26,7 @@ export class FormatNumberDirective {
         currency: 'USD',
         minimumFractionDigits: 2
       });
-      this.el.nativeElement.value = formatter.format(this.el.nativeElement.value);
+      this.el.nativeElement.value = isNaN(this.el.nativeElement.value) ?
+      this.el.nativeElement.value : formatter.format(this.el.nativeElement.value);
   }
 }

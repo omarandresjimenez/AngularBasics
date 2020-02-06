@@ -9,6 +9,7 @@ import { ParentComponent } from './pages/parent/parent.component';
 import { ChildrenComponent } from './pages/children/children.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { FormatNumberDirective } from './directives/number-format.directive';
+import { AutoFormatNumberDirective } from './directives/number-auto-format.directive';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FormatNumberDirective } from './directives/number-format.directive';
     ChildrenComponent,
     ContactComponent,
     FormatNumberDirective,
+    AutoFormatNumberDirective,
   ],
   imports: [
     BrowserModule,

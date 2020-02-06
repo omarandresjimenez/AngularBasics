@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
-
+  public price = 0;
   constructor() { }
 
   ngOnInit() {}
 
+  public doSomething() {
+    console.log('event binding!!');
+  }
 
 }
