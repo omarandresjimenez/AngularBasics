@@ -20,12 +20,11 @@ describe('ChildrenComponent', () => {
   });
 
 
-  it('should return 2 news objects as initialized in the service', () => {
+  it('should return 1 news object as initialized in the component', () => {
       const arrNewsExpected = [
         { id: 1, image: '1.jpg', description: 'Great place to live' },
-        { id: 2, image: '2.jpg', description: 'Nice place to visit' },
         ];
-        component.count = 2;
+        component.count = 1;
         component.getNews();
       expect(component.news).toEqual(arrNewsExpected);
   });
