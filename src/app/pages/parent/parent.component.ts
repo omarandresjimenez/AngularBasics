@@ -12,7 +12,7 @@ export class ParentComponent implements OnInit, OnDestroy {
   countNews = 2;
   sub: Subscription;
   constructor(
-    private service: MainserviceService,
+    public service: MainserviceService,
   ) { }
 
   ngOnInit() {
