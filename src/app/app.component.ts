@@ -11,5 +11,4 @@ export class AppComponent {
   constructor(private service: MainserviceService) {
     this.service.setMessage(' Fired for APP Component');
   }
-
 }
