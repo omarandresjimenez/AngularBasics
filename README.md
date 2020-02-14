@@ -1,5 +1,7 @@
 # TestProject BasicAngular  (version 8 of Angular)
 
+Live site: https://omarandresjimenez.github.io/
+
 Simple Angular project  showing this features:
 
 1) Demonstrates the usage of ngOnChanges, @Ouput() , @Input() , RXJS  (Parent component - children component)
@@ -23,6 +25,10 @@ Simple Angular project  showing this features:
 10) Demonstrates various ways to bind component properties to an associated template   (Contact Component)
  
 11) Has unit tests. (childre component)
+
+12) index2.html contains a static slicing design test:  https://omarandresjimenez.github.io/index2.html
+
+Notes:
  
  Ugly colors are intented to identify all app sections after Angular makes the changes in the UI.  ABout section use lots of HTML 5 tags and mediaqueries to allow responsiveness
 
